@@ -95,7 +95,7 @@
                     <div class="col-lg-6">
                         <div class="text-center p-5" style="background: rgba(92, 131, 116, 0.7);">
                             <h1 class="text-white mb-4 mt-5">Book Now!</h1>
-                            <form class="mb-5">
+                            <form class="mb-5" action="reserve.php" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Name"
                                         required="required" />
@@ -117,15 +117,16 @@
                                 <div class="form-group">
                                     <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
                                         <option selected>Person</option>
-                                        <option value="1">Person 1</option>
-                                        <option value="2">Person 2</option>
-                                        <option value="3">Person 3</option>
-                                        <option value="3">Person 4</option>
+                                        <option value="1">Package 1</option>
+                                        <option value="2">Package 2</option>
+                                        <option value="3">Package 3</option>
+                                        <option value="3">Package 4</option>
                                     </select>
                                 </div>
                                 
                                 <div>
-                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Book Now</button>
+                                    <button class="btn btn-primary btn-block font-weight-bold py-3" data-target="#reserve" data-toggle="modal" type="submit">Book Now</button>
+
                                 </div>
                             </form>
                         </div>
@@ -134,9 +135,14 @@
             </div>
         </div>
     </div>
-    <!-- Reservation End -->
 
+    <div>
 
+        
+    </div>
+<!-- Button trigger modal -->
+
+  
     <!-- Footer Start -->
     <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
@@ -199,6 +205,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
