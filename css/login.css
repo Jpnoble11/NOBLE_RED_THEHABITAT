@@ -14,21 +14,20 @@ body {
 }
 
 .login-form {
-  background-color: #353b48;
   padding: 50px;
   border-radius: 5px;
   color: #ffffff;
-  max-width: 500px;
-  width: 100%;
 }
 
 .login-title {
+  color: #000;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
 
 label {
-  color: #ffffff;
+  color: BLACK;
 }
 
 .login-box {
@@ -37,16 +36,15 @@ label {
 
 input[type="email"],
 input[type="password"] {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border: none;
   border-radius: 3px;
-  margin-right: 40px;
 }
 
 .login_btn {
-  background-color: #3c90d1;
-  color: #ffffff;
+  background-color: #5c8374;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 3px;
@@ -54,10 +52,18 @@ input[type="password"] {
 }
 
 .login_btn:hover {
-  background-color: #3079b5;
+  background-color: #9ec8b9;
 }
 
 a {
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
+}
+.con {
+  background-color: rgba(92, 131, 116, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(0px);
+  max-width: 500px;
+  width: 100%;
 }
