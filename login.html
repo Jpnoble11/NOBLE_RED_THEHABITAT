@@ -39,11 +39,11 @@
                   id="login"
                   class="login_btn"
                   value="Log In"
-                  href="index.html"
+                  href="./index"
                 />
               </div>
               <div class="row-button">
-                <a href="/signup">
+                <a href="./signup">
                   <button class="login_btn">Sign Up</button></a
                 >
               </div>
@@ -100,7 +100,7 @@
           });
           alert("User Logged in!");
           // Redirect to another page or perform further actions as needed
-          window.location.href = "/admin";
+          window.location.href = "./admin";
         })
         .catch((error) => {
           const errorCode = error.code;
