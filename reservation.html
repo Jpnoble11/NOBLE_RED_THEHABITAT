@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;" id="reservationPackage">
+                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;" id="reservationPack">
                                         <option selected>Person</option>
                                         <option value="1">Package 1</option>
                                         <option value="2">Package 2</option>
@@ -222,7 +222,7 @@
             const email = document.getElementById('reservationEmail').value;
             const date = document.getElementById('reservationDate').value;
             const time = document.getElementById('reservationTime').value;
-            const package = document.getElementById('reservationPackage').value;
+            const pack = document.getElementById('reservationPack').value;
     
             // Check if the date is available (not in the reservedDates array)
             const isDateAvailable = !reservedDates.includes(date);
@@ -235,7 +235,7 @@
                     email,
                     date,
                     time,
-                    package,
+                    pack,
                 });
     
                 alert('Reservation successful!');
