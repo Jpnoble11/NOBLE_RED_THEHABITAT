@@ -42,9 +42,7 @@
                 />
               </div>
               <div class="row-button">
-                <a href="login.html">
-                  <button class="login_btn">Cancel</button></a
-                >
+                <a href="/login"> <button class="login_btn">Cancel</button></a>
                 >
               </div>
             </div>
@@ -99,7 +97,8 @@
             email: email,
           });
           alert("user created!");
-          // ...
+
+          window.location.href = "/login";
         })
         .catch((error) => {
           const errorCode = error.code;
