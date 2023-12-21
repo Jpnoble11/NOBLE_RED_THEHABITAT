@@ -393,19 +393,22 @@
           </h4>
           <p>Tell us your Suggestions</p>
           <div class="w-100">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control border-light"
-                style="padding: 25px"
-                placeholder="Your Email"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-primary font-weight-bold px-3">
-                  Sign Up
-                </button>
+            <form action="mailto:noblejohnpaul1o@gmail.com" method="post">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  style="padding: 25px"
+                  placeholder="Your Email"
+                  required
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary font-weight-bold px-3">
+                    Sign Up
+                  </button>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -597,27 +600,6 @@
         });
     </script>
 
-    <script>
-      // JavaScript to handle the selected package value
-      document
-        .getElementById("packageModal")
-        .addEventListener("click", function (event) {
-          if (event.target.tagName === "BUTTON") {
-            var selectedPackage = event.target.getAttribute("data-package");
-            document.getElementById("selectedPackage").value = selectedPackage;
-
-            // Display the selected package information
-            document.getElementById("selectedPackageInfo").innerHTML =
-              "Selected Package: Package " + selectedPackage;
-          }
-        });
-
-      // Update the select box value when the modal is closed
-      $("#packageModal").on("hidden.bs.modal", function () {
-        var selectedPackage = document.getElementById("selectedPackage").value;
-        document.getElementById("reservationPack").value = selectedPackage;
-      });
-    </script>
     <script>
       // JavaScript to handle the selected package value
       document
