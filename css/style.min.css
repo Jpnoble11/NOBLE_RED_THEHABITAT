@@ -8894,3 +8894,9 @@ h6,
   background-color: #cccccc;
   color: #999999;
 }
+
+#packageModal .modal-dialog {
+  max-width: 80%;
+  width: 80%;
+  margin: 0;
+}

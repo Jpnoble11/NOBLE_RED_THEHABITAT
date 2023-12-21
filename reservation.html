@@ -72,7 +72,7 @@
                 href="#"
                 class="nav-link dropdown-toggle active"
                 data-toggle="dropdown"
-                >Pages</a
+                >Bookings</a
               >
               <div class="dropdown-menu text-capitalize">
                 <a href="./reservation" class="dropdown-item active"
@@ -206,6 +206,7 @@
                   </div>
 
                   <!-- Modal -->
+
                   <div
                     class="modal fade"
                     id="packageModal"
@@ -214,7 +215,7 @@
                     aria-labelledby="packageModalLabel"
                     aria-hidden="true"
                   >
-                    <div class="modal-dialog modal-lg mx-auto" role="document">
+                    <div class="modal-dialog mx-auto" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title" id="packageModalLabel">
@@ -238,6 +239,7 @@
                                 alt="Package 1"
                                 class="img-fluid"
                               />
+                              <h5>Price: 500Php</h5>
                               <button
                                 class="btn btn-primary btn-block mt-2"
                                 data-dismiss="modal"
@@ -252,6 +254,7 @@
                                 alt="Package 2"
                                 class="img-fluid"
                               />
+                              <h5>Price: 600Php</h5>
                               <button
                                 class="btn btn-primary btn-block mt-2"
                                 data-dismiss="modal"
@@ -266,6 +269,7 @@
                                 alt="Package 3"
                                 class="img-fluid"
                               />
+                              <h5>Price: 800Php</h5>
                               <button
                                 class="btn btn-primary btn-block mt-2"
                                 data-dismiss="modal"
@@ -280,6 +284,7 @@
                                 alt="Package 4"
                                 class="img-fluid"
                               />
+                              <h5>Price: 1000Php</h5>
                               <button
                                 class="btn btn-primary btn-block mt-2"
                                 data-dismiss="modal"
@@ -288,11 +293,42 @@
                                 Package 4
                               </button>
                             </div>
+                            <div class="col-4 mb-3">
+                              <img
+                                src="img/package5.png"
+                                alt="Package 3"
+                                class="img-fluid"
+                              />
+                              <h5>Price: 10000Php</h5>
+                              <button
+                                class="btn btn-primary btn-block mt-2"
+                                data-dismiss="modal"
+                                data-package="3"
+                              >
+                                Package 3
+                              </button>
+                            </div>
+                            <div class="col-4 mb-3">
+                              <img
+                                src="img/package6.png"
+                                alt="Package 3"
+                                class="img-fluid"
+                              />
+                              <h5>Price: 20000Php</h5>
+                              <button
+                                class="btn btn-primary btn-block mt-2"
+                                data-dismiss="modal"
+                                data-package="3"
+                              >
+                                Package 3
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <div class="form-group">
                     <div style="margin-bottom: 20px" id="reservationPack">
                       <!-- Hidden input to store the selected package value -->
